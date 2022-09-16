@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>脳トレ - 記憶力ゲーム</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="title">
+    <img src="img/LOGO.png" alt="ロゴ画像">
+    <button id="start-btn">GAME START</button>
+
+    <ul>
+      <li>3秒間で画面に写された色と数字を覚えてください。</li>
+      <li>3秒経過すると問題が表示されます。</li>
+      <li>なるべく早い正解を目指しましょう。</li>
+    </ul>
+
+    <a href="#">ゲーム一覧に戻る</a>
+  </div>
+
+  <div class="container hidden">
+    <main class="board">
+    </main>
+
+    <div class="blind hidden">
+      <p id="question"></p>
+    </div>
+
+    <ul class="answers hidden">
+    </ul>
+
+    <div class="result hidden">
+      <p id="clearTime"></p>
+      <a href="index.html" class="title-btn">タイトルに戻る</a>
+    </div>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
